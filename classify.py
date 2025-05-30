@@ -22,11 +22,6 @@ class Classifier(dspy.Module):
 
 if __name__=="__main__":
 
-    api_key = os.environ.get("OPENAI_API_KEY")
-    if not api_key:
-        print("OpenAI API key not found. Please set the OPENAI_API_KEY environment variable.")
-        exit(1)
-
     lm = dspy.LM('ollama_chat/llama3.2', api_base='http://localhost:11434', api_key='')
     dspy.configure(lm=lm)
 
@@ -36,3 +31,5 @@ if __name__=="__main__":
     
     print(f"Sentence: {sentence}")
     print(f"Result: {result.sentiment} with confidence {result.confidence:.2f}.")
+
+    dspy.inspect_history()
