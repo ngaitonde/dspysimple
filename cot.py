@@ -5,8 +5,6 @@ import os
 
 load_dotenv()
 
-# lm = dspy.LM('ollama_chat/llama3.2', api_base='http://localhost:11434', api_key='')
-
 api_key = os.environ.get("OPENAI_API_KEY")
 if not api_key:
    print("OpenAI API key not found. Please set the OPENAI_API_KEY environment variable.")

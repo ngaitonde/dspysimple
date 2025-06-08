@@ -31,5 +31,3 @@ if __name__=="__main__":
     
     print(f"Sentence: {sentence}")
     print(f"Result: {result.sentiment} with confidence {result.confidence:.2f}.")
-
-    dspy.inspect_history()
