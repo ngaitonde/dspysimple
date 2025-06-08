@@ -21,7 +21,13 @@ Given a sentence, classify the sentiment to one of 3 values: positive, negative 
 - **cot_slm.py**  
 Given a mathematical problem, use the Chain of Thought primitive, to reason over the answer. Sends this to a locally running SLM (Small Language Model) using Ollama's Llama3.2-1b and prints the response.
 
-- **infoextraction_slm.py**  
+- **cot.py**  
+Given a mathematical problem, use the Chain of Thought primitive, to reason over the answer. Sends this to an OpenAI model (gpt-4o-mini) and prints the response.
+
+- **followuptask.py**  
+Given a sentence, find the top 3 follow up tasks. Sends this to an OpenAI model (gpt-4o-mini) and prints the response.
+
+- **infoextraction.py**  
 Given a sentence, extract entities and generate headlines. Sends this to a locally running SLM (Small Language Model) using Ollama's Llama3.2-1b and prints the response.
 
 ## Getting Started
