@@ -1,0 +1,17 @@
+========================================================================================================================
+RESULTS TABLE
+========================================================================================================================
+Query                     | Style    | Prediction                                         | Style Score | Length
+------------------------------------------------------------------------------------------------------------------------
+What is machine learni... | formal   | Machine learning is a specialized branch of art... | 0.95        | 147
+How do I bake a cake?     | casual   | Hey there! Baking a cake is totally doable and ... | 0.95        | 156
+What is the weather li... | neutral  | I don't have access to real-time weather data o... | 0.90        | 38
+How can i cook soup?      | neutral  | To cook soup, start by choosing your base ingre... | 0.90        | 76
+------------------------------------------------------------------------------------------------------------------------
+
+==================================================
+FINAL RESULTS
+==================================================
+Average Style Score: 92.50
+Average Length: 10425 words
+==================================================
