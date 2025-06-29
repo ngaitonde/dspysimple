@@ -31,7 +31,7 @@ The goal is to demonstrate how to send basic instructions (such as "Say Hello Wo
 - **infoextraction.py**  
   Given a sentence, extract entities and generate headlines. Sends this to a locally running SLM (Small Language Model) using Ollama's Llama3.2-1b and prints the response.
 
-### summarize_metric/
+## summarize_metric
 
 Contains scripts and data for evaluating summarization quality:
 
@@ -40,7 +40,7 @@ Contains scripts and data for evaluating summarization quality:
 - **dataset.jsonl**  
   Example dataset in JSON Lines format for summarization evaluation.
 
-### style_evaluation/
+## style_evaluation
 
 Contains scripts and results for evaluating the style of generated text:
 
