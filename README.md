@@ -31,6 +31,9 @@ The goal is to demonstrate how to send basic instructions (such as "Say Hello Wo
 - **infoextraction.py**  
   Given a sentence, extract entities and generate headlines. Sends this to a locally running SLM (Small Language Model) using Ollama's Llama3.2-1b and prints the response.
 
+- **tool_example.py**  
+  Demonstrates DSPy's tool integration using the ReAct (Reasoning + Acting) pattern with a custom FizzBuzz tool. Shows how to create custom tools, integrate them with DSPy modules, and use iterative reasoning to solve problems step-by-step.
+
 ## summarize_metric
 
 Contains scripts and data for evaluating summarization quality:

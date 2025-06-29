@@ -91,11 +91,11 @@ with open(os.path.join(sys.path[0], 'dataset.jsonl'), 'r', encoding='utf-8') as 
         score = data.get("score", "0")
         dataset.append(dspy.Example(example=example, pred=pred, score=score))
 
-# create program
-program = Metric()
+# create evaluation program - metric
+metric = Metric()
 
-result = program(example=dataset[0].example, pred=dataset[0].pred)
+result = metric(example=dataset[0].example, pred=dataset[0].pred)
 print('Passage 0: ', dataset[0].example.passage, '\nSummary 0: ', dataset[0].example.summary, '\nResult 0: ', result)
 
-result = program(example=dataset[1].example, pred=dataset[0].pred)
+result = metric(example=dataset[1].example, pred=dataset[0].pred)
 print('Passage 1: ', dataset[1].example.passage, '\nSummary 1: ', dataset[1].example.summary, '\nResult 1: ', result)
